@@ -2,7 +2,7 @@
 <html>
     <head>
 	<meta charset="UTF-8">
-	<title>title</title>
+	<title>WeatherAPI</title>
 	<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
 	<link rel="stylesheet" href="skeleton.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -13,11 +13,23 @@
 	    <!-- USER STORY 1: I can see the weather in my current location. -->
         <!-- USER STORY 2: I can see a different icon or background image(e.g. snowy mountain, hot desert) depending on the weather. -->
         <!-- USER STORY 3: I can push a button to toggle between Fahrenheit and Celcius -->
+        <div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<div class="four columns offset-by-four content-box">
+						<h3 id="city"></h3>
+						<h1 id="degree"> </h1>
+						<img id="icon" src=""></img> 
+						<h2 id="weather-text"> </h2>						
+						<i class="weather-icon" aria-hidden="true"></i> 
+						<a class="button bottom">Toggle Units</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+
         
-        <span id="degree"> </span>
-        <span id="weather-text"> </span>   
-        <i class="weather-icon" aria-hidden="true"></i> 
-        <a class="button">Toggle F/C</a>
 
 	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src ="script.js"></script>
